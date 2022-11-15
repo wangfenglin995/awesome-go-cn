@@ -375,49 +375,31 @@
 ----
 ## 数据库  
 `go语言实现的数据库`
-* [badger](https://github.com/dgraph-io/badger) : `Go`中的快速键值存储库。 
-* [bbolt](https://github.com/etcd-io/bbolt) :  `Go`的嵌入式键值数据库。
-* [bcache](https://github.com/iwanbk/bcache) :  最终一致的分布式内存缓存`Go`库。
-* [BigCache](https://github.com/allegro/bigcache) :  为GB量级数据设计的高效键/值缓存
-* [Bitcask](https://github.com/prologic/bitcask) :   `Bitcask` 是一个用纯 Go 编写的可嵌入的、持久的、快速的键值（KV）数据库,由于采用了 `bitcask` 盘上布局（LSM+WAL）,它具有可预测的读/写性能、低延迟和高吞吐量。
-* [buntdb](https://github.com/tidwall/buntdb) :  快速,可嵌入的,内存键值数据库,可定义索引及 `spatial`
-* [cache](https://github.com/akyoto/cache) :   内存中的`key:value`存储,有过期时间,0依赖,<100 LoC,100%覆盖。
-* [cache2go](https://github.com/muesli/cache2go) :  基于内存存储的键值缓存,支持自动基于超时的自动失效
-* [clusteredBigCache](https://github.com/oaStuff/clusteredBigCache) :  `BigCache`支持集群和单个项目过期。
-* [cockroach](https://github.com/cockroachdb/cockroach) :  可扩展的、一致的事务型数据库
-* [Coffer](https://github.com/claygod/coffer) :   简单的`ACID`键值数据库,支持事务。
-* [couchcache](https://github.com/codingsince1985/couchcache) :  `RESTful` 缓存微服务,基于`Couchbase`数据库
-* [CovenantSQL](https://github.com/CovenantSQL/CovenantSQL) :  `CovenantSQL`是一个区块链上的SQL数据库。
-* [Databunker](https://github.com/paranoidguy/databunker) :  为符合`GDPR`和`CCPA`而构建的个人身份信息`PII`存储服务。
-* [dgraph](https://github.com/dgraph-io/dgraph) :  可扩展的、分布式的、低延时、高吞吐的图数据库
-* [diskv](https://github.com/peterbourgon/diskv) :   具有 `disk-backed` 功能的持久化键值存储
-* [eliasdb](https://github.com/krotik/eliasdb) :  无依赖、事物型图数据库,支持 `REST API`、短语搜索以及类` SQL` 的查询语言
-* [fastcache](https://github.com/VictoriaMetrics/fastcache) :  针对大量条目的快速线程安全内存缓存。将`GC`开销降到最低。
-* [GCache](https://github.com/bluele/gcache) :  支持缓存过期、 `LFU、 LRU `和 `ARC `的缓存库
-* [go-cache](https://github.com/pmylund/go-cache) :   基于内存存储的缓存,适用于分布式部署的应用
-* [goleveldb](https://github.com/syndtr/goleveldb) :  `Go`中[LevelDB](https://github.com/google/leveldb)键/值数据库的实现  
-* [groupcache](https://github.com/golang/groupcache) :  ` Groupcache `是一个缓存及缓存填充库,在很多情况下用于替代 `memcached`.
-* [immudb](https://github.com/codenotary/immudb) :  `immudb `是一个轻量级、高速的不可变数据库,适用于用` Go `编写的系统和应用程序。
-* [influxdb](https://github.com/influxdb/influxdb) :  用于度量、事件和实时分析的可扩展数据存储。
-* [Kivik](https://github.com/go-kivik/kivik) :  `Kivik`为`CouchDB、PouchDB`和类似的数据库提供了一个通用的`Go`和`GopherJS`客户端库。
-* [ledisdb](https://github.com/siddontang/ledisdb) :  `Ledisdb `是一个高性能 `NoSQL` 数据库,类似 `Redis`
-* [levigo](https://github.com/jmhodges/levigo) :  ` LeviGo `是 `LevelDB`的 `Go `语言封装
-* [moss](https://github.com/couchbase/moss) :  ` Moss` 是一个简单的 `LSM `键值存储引擎,100% Go 语言实现
-* [nutsdb](https://github.com/xujiajun/nutsdb) :  `Nutsdb`是一个用纯`Go`编写的简单、快速、可嵌入、持久化的键/值存储。它支持完全可序列化的事务和许多数据结构,如列表、集合、排序集合。
-* [piladb](https://github.com/fern4lvarez/piladb) :  轻量级 `RESTful` 数据库引擎,基于堆栈结构
-* [pogreb](https://github.com/akrylysov/pogreb) :  嵌入式键值存储,适用于重读工作负载。
-* [prometheus](https://github.com/prometheus/prometheus) :  监控系统及时间序列数据库
-* [pudge](https://github.com/recoilme/pudge) :   使用 `Go` 的标准库编写的快速、简单的键值存储。
-* [rosedb](https://github.com/roseduan/rosedb) : 一个基于 LSM+WAL 的内嵌 k-v数据库，支持多种数据结构，如字符串、列表、哈希表、集合、有序集合
-* [rqlite](https://github.com/rqlite/rqlite) :  基于 `SQLite `的轻量级的、分布式的关系型数据库
-* [Scribble](https://github.com/nanobox-io/golang-scribble) :  小巧的 `JSON` 文件存储
-* [slowpoke](https://github.com/recoilme/slowpoke) :   具有持久性的键值存储。
-* [tempdb](https://github.com/rafaeljesus/tempdb) :  临时数据的键值对存储
-* [tidb](https://github.com/pingcap/tidb) : ` TiDB` 是一个分布式的` SQL` 数据库。受到了` Google F1`的启发
-* [tiedot](https://github.com/HouzuoGuo/tiedot) :  基于` Go `语言的` NoSQ`L 数据库
-* [unitdb](https://github.com/unit-io/unitdb) :  用于物联网、实时消息应用的快速时序数据库。
-* [Vasto](https://github.com/chrislusf/vasto) :   一个分布式高性能键值存储。在磁盘上。最终一致。HA。能够在不中断服务的情况下增长或收缩。
-* [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) :  快速、资源高效、可扩展的开源时间序列数据库。可作为`Prometheus`的长期远程存储。支持`PromQL`。
+* [badger](https://github.com/dgraph-io/badger) : `Go`中的快速键值存储库。 11.5k
+* [bbolt](https://github.com/etcd-io/bbolt) :  `Go`的嵌入式键值数据库。 6k
+* [BigCache](https://github.com/allegro/bigcache) :  为GB量级数据设计的高效键/值缓存  6.1k
+* [buntdb](https://github.com/tidwall/buntdb) :  快速,可嵌入的,内存键值数据库,可定义索引及 `spatial`  3.9k
+* [cache2go](https://github.com/muesli/cache2go) :  基于内存存储的键值缓存,支持自动基于超时的自动失效   1.9k
+* [cockroach](https://github.com/cockroachdb/cockroach) :  可扩展的、一致的事务型数据库    **26.1k**
+* [CovenantSQL](https://github.com/CovenantSQL/CovenantSQL) :  `CovenantSQL`是一个区块链上的SQL数据库。 1.4k
+* [Databunker](https://github.com/paranoidguy/databunker) :  为符合`GDPR`和`CCPA`而构建的个人身份信息`PII`存储服务。 1k
+* [dgraph](https://github.com/dgraph-io/dgraph) :  可扩展的、分布式的、低延时、高吞吐的图数据库   **18.6k**
+* [diskv](https://github.com/peterbourgon/diskv) :   具有 `disk-backed` 功能的持久化键值存储   1.2k
+* [fastcache](https://github.com/VictoriaMetrics/fastcache) :  针对大量条目的快速线程安全内存缓存。将`GC`开销降到最低。  1.6k
+* [GCache](https://github.com/bluele/gcache) :  支持缓存过期、 `LFU、 LRU `和 `ARC `的缓存库    2.2k
+* [go-cache](https://github.com/pmylund/go-cache) :   基于内存存储的缓存,适用于分布式部署的应用     6.7k
+* [goleveldb](https://github.com/syndtr/goleveldb) :  `Go`中[LevelDB](https://github.com/google/leveldb)键/值数据库的实现   5.4k
+* [groupcache](https://github.com/golang/groupcache) :  ` Groupcache `是一个缓存及缓存填充库,在很多情况下用于替代 `memcached`.   11.8k
+* [immudb](https://github.com/codenotary/immudb) :  `immudb `是一个轻量级、高速的不可变数据库,适用于用` Go `编写的系统和应用程序。   8k
+* [influxdb](https://github.com/influxdb/influxdb) :  用于度量、事件和实时分析的可扩展数据存储。    **24.4k**
+* [ledisdb](https://github.com/siddontang/ledisdb) :  `Ledisdb `是一个高性能 `NoSQL` 数据库,类似 `Redis`   3.9k
+* [nutsdb](https://github.com/xujiajun/nutsdb) :  `Nutsdb`是一个用纯`Go`编写的简单、快速、可嵌入、持久化的键/值存储。它支持完全可序列化的事务和许多数据结构,如列表、集合、排序集合。   2.6k
+* [prometheus](https://github.com/prometheus/prometheus) :  监控系统及时间序列数据库   **45.5k**
+* [rosedb](https://github.com/roseduan/rosedb) : 一个基于 LSM+WAL 的内嵌 k-v数据库，支持多种数据结构，如字符串、列表、哈希表、集合、有序集合    3.4k
+* [rqlite](https://github.com/rqlite/rqlite) :  基于 `SQLite `的轻量级的、分布式的关系型数据库   12.1k
+* [tidb](https://github.com/pingcap/tidb) : ` TiDB` 是一个分布式的` SQL` 数据库。受到了` Google F1`的启发   **32.8k**
+* [tiedot](https://github.com/HouzuoGuo/tiedot) :  基于` Go `语言的` NoSQ`L 数据库     2.7k
+* [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) :  快速、资源高效、可扩展的开源时间序列数据库。可作为`Prometheus`的长期远程存储。支持`PromQL`。   7.4k
  #### 数据库迁移工具
 * [avro](https://github.com/khezen/avro) :  发现`SQL`模式并将其转换为`AVRO`模式。查询`SQL`记录到`AVRO`字节。
 * [darwin](https://github.com/GuiaBolso/darwin) :  数据库模式增量库
